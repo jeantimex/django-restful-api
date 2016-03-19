@@ -20,6 +20,7 @@ from aeteno import views as aeteno_views
 urlpatterns = [
     url(r'^$', aeteno_views.index),
     url(r'^add/$', aeteno_views.add, name='add'),
-    url(r'^add/(\d+)/(\d+)/$', aeteno_views.add_rest, name='add_rest'),
+    url(r'^add/(\d+)/(\d+)/$', aeteno_views.add_rest),
+    url(r'^new_add/(\d+)/(\d+)/$', aeteno_views.new_add_rest, name='add_rest'),
     url(r'^admin/', admin.site.urls),
 ]
