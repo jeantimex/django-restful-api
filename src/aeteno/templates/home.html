@@ -4,5 +4,6 @@
  
 {% block content %}
 这里是首页，欢迎光临
-{{ string }}
+<div>{{ request.path }}</div>
+<div>{{ string }}</div>
 {% endblock %}
