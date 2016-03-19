@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from aeteno import views as aeteno_views
 
 urlpatterns = [
+    url(r'^$', aeteno_views.index),
+    url(r'^add/$', aeteno_views.add, name='add'),
+    url(r'^add/(\d+)/(\d+)/$', aeteno_views.add_rest, name='add_rest'),
     url(r'^admin/', admin.site.urls),
 ]
