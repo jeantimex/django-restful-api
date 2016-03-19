@@ -32,4 +32,5 @@ def new_add_rest(request, a, b):
 
 # Render from template
 def home(request):
-    return render(request, 'home.html')
+    string = u"Su is learning Django"
+    return render(request, 'home.html', { 'string': string })
