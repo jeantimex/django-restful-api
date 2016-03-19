@@ -29,3 +29,7 @@ def add_rest(request, a, b):
 def new_add_rest(request, a, b):
     c = int(a) + int(b)
     return HttpResponse(str(c))
+
+# Render from template
+def home(request):
+    return render(request, 'home.html')

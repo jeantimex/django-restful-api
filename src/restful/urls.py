@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^add/$', aeteno_views.add, name='add'),
     url(r'^add/(\d+)/(\d+)/$', aeteno_views.add_rest),
     url(r'^new_add/(\d+)/(\d+)/$', aeteno_views.new_add_rest, name='add_rest'),
+    url(r'^home/$', aeteno_views.home, name='home'),
     url(r'^admin/', admin.site.urls),
 ]
